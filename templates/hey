@@ -1,0 +1,394 @@
+
+
+
+
+
+<nav class="navbar navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Hjemme <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Kundeservice</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link " href="#">Om Oss</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link " href="#">Blog</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link " href="#">Logg Inn</a>
+          </li>
+      </ul>
+    </div>
+    <form class="form-inline my-2 my-lg-0" style="position: relative; right: 400px">
+        <input class="form-control mr-sm-2" type="search" placeholder="Søk i butikken" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color: navy; border: none;"><img src="{% static '/images/search-icon.png' %}" height="30px" width="30px"  alt="search-button"></button>
+      </form>
+      <a href="#"><i class="fa fa-shopping-cart" id="cart" href="#"></i></a>
+        
+  </nav>
+
+
+
+
+  @media only screen and (max-width: 1700px) {
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+ 
+body{
+     background-color: white;
+     font-family: 'Alata', sans-serif;
+     background-color: white;
+ }
+
+
+    .row{
+      position: relative;
+      background-color: navy;
+      margin-top: 10px;
+      -webkit-transition: background-color 10s ease-out;
+      -moz-transition: background-color 2s ease-out;
+      -o-transition: background-color 2s ease-out;
+      transition: background-color 2s ease-out;
+      
+  }  
+
+    .row:hover{
+    background-color: rgba(5, 5, 172, 0.781);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+
+
+    .row:hover h2{
+     transform: scale(1.1);
+}
+
+
+    .row h2{
+      color: white;
+      font-size: 20px;
+      position: relative;
+      left: 439px;
+      margin-top: 7px;
+      font-size: 18px;
+      margin: 0;
+      text-align: center;
+      -webkit-transition: transform .5s ease;
+      -moz-transition: transform .5s ease;
+      -o-transition: transform .5s ease;
+      transition: transform .5s ease;
+      
+  }
+
+  li a:hover{
+      background-color: rgba(150, 150, 150, 0.699);
+      padding: 2px;
+      
+  }
+#cart{
+    font-size: 50px;
+    position: relative;
+    right: 80px;
+    -webkit-transition: transform  .5s ease;
+    -moz-transition: transform  .5s ease;
+    -o-transition: transform  .5s ease;
+    transition: transform  .5s ease;
+    color: rgba(0, 0, 0, 0.795);
+    list-style: none;
+}
+
+#cart:hover{
+    transform: scale(0.9) rotate(-15deg);
+     
+}
+  
+}
+
+
+@media only screen and (max-width: 600px) {
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+#cart{
+    position: relative;
+    top: -78px;
+}
+
+
+
+
+}
+
+
+
+
+<div id="sidebar">
+    <div class="toggle-btn" id="toggle" onclick="show()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <form class="form-inline my-2 my-lg-0" id="search">
+      <input  class="form-control mr-sm-2" type="text" placeholder="Søk i butikken" aria-label="Search">
+      <button class="button medium-btn btn-outline-success my-2 my-sm-0" id="icon" type="submit" style="background-color: navy; border: none;"><img src="{% static '/images/search-icon.png' %}" height="30px" width="30px"  alt="search-button"></button>
+    </form>
+    
+    
+    <div id="cart">
+      <i class="fa fa-shopping-cart" id="cart"></i>
+      
+    </div> 
+  
+  <ul>
+    <hr style="border: 1px solid white; opacity: 0.3;">  
+    <li><a href="/">Hjemme</a></li>
+    <hr style="border: 1px solid white; opacity: 0.3;">    
+    <li><a href="/">Kundeservice</a></li>
+    <hr style="border: 1px solid white; opacity: 0.3;"> 
+    <li><a href="/">Om Oss</a></li>
+    <hr style="border: 1px solid white; opacity: 0.3;"> 
+    <li><a href="/">Blogg</a></li>
+    <hr style="border: 1px solid white; opacity: 0.3;">     
+    <li><a href="/">Logg Inn</a></li>
+    <hr style="border: 1px solid white; opacity: 0.3;"> 
+  </ul>
+</div>
+
+
+
+
+$primaryColor: navy;
+
+*{
+  
+    margin: 0;
+    padding: 0;
+  
+}
+
+@media only screen and (max-width: 1068px) {
+
+}  
+
+
+
+
+
+
+
+@media only screen and (max-width: 668px) {
+    @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+    
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        body {
+          background-color: white;
+          font-family: 'Alata', sans-serif;
+          background-color: white;
+        }
+        .row {
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0;
+          position: relative;
+          background-color: $primaryColor;
+          margin-top: 10px;
+          -webkit-transition: background-color 10s ease-out;
+          -webkit-transition: background-color 2s ease-out;
+          transition: background-color 2s ease-out;
+          &:hover {
+            background-color: rgba(5, 5, 172, 0.781);
+            cursor: pointer;
+            -webkit-transition: background-color 0.5s ease;
+            transition: background-color 0.5s ease;
+           
+          }
+          &:hover h2 {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+           h2 {
+            color: white;
+            font-size: 20px;
+            position: relative;
+            left: 44px;
+            margin-top: 7px;
+            font-size: 18px;
+            margin: 0;
+            text-align: center;
+            -webkit-transition: transform .5s ease;
+            -webkit-transition: -webkit-transform .5s ease;
+            transition: -webkit-transform .5s ease;
+            transition: transform .5s ease;
+            transition: transform .5s ease, -webkit-transform .5s ease;
+          }
+        }
+        
+        
+        
+       #sidebar {
+          background-color: #000;
+          position: absolute;
+          width: 250px;
+          height: 100%;
+          background:rgb(43, 42, 42);
+          left: -300px;
+          -webkit-transition: .4s;
+          transition: .4s;
+          z-index: 9;
+        }
+        ul{
+          border-top: white 4px solid;
+          background:  rgb(43, 42, 42);
+        }
+         #sidebar.active{
+          left: 0; 
+          z-index: 9;
+        }
+       
+        ul li a {
+          list-style: none;
+          color: white;
+          font-size: 16px;
+          padding: 20px 24px;
+          padding-bottom: 20px;
+
+          &:hover{
+            width: 100%;
+            background: #969696;
+            color: white;
+            text-decoration: none;
+          }      
+        }      
+        .toggle-btn {
+          position: absolute;
+          top: 27.5px;
+          left: 320px;
+        }
+        .toggle-btn span {
+          width: 45px;
+          height: 4px;
+          background: #000;
+          display: block;
+          margin-top: 4px;
+        }
+    
+       
+     
+       
+        #cart{
+          display: inline-block;
+          font-size: 45px;
+          position: absolute;
+          left: 305px;
+          top: 12px;
+          color: rgba(0, 0, 0, 0.795);
+          list-style: none;
+      }
+      
+      
+       #search{
+        width: 100%;
+        position: absolute;
+        position: sticky;
+        top: 20px;
+        left: 410px;
+        display: inline-block;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        position: absolute;
+        
+        } 
+        #icon{
+        margin: auto;
+        display: inline-block;
+        position: absolute;
+        left: 135px;
+        padding: 3px;
+      }
+      input[type=text] {
+        width: 130px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+       }
+     
+
+      
+    
+     
+    /* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Gotham;
+  color: #818181;
+  display: block;
+  transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+    
+    
+    
+      }
+
+
+
+    action="/search"
+
+
+
+  automate a function
+
+
+setTimeout(function () { NAME OF FUNCTION(); }, SECONDS TO WAIT (ms) ); 
+
+<img src="{% static '/images/close.png' %}">

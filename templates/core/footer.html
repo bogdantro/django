@@ -1,0 +1,54 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static '/scss/footer.css' %}" type="text/css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+<script rel="stylesheet" src="{% static '/js/footer.js' %}" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+  <div id="footerContent">
+   
+    <ul id="footerLinks1">
+        <h1>Hjelp</h1>
+        <li><a href="#">Refunds</a></li>
+        <li><a href="#">Butikker</a></li>
+        <li><a href="#">FAQ</a></li>
+    </ul>
+    <ul id="footerLinks2">
+        <h1>Policy</h1>
+        <li><a href="#">Tjenester</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Bli Medlem</a></li>
+    </ul>
+    <ul id="footerLinks3">
+        <h1>Meny</h1>
+        <li><a href="/">Hjemme</a></li>
+        <li><a href="contact">Kundeservice</a></li>
+        <li><a href="about">Om Oss</a></li>
+        <li><a href="blog">Blogg</a></li>
+        <li><a href="/">Logg Inn</a></li>
+    </ul>
+    <div id="mainWrapper" class="parent-wrapper">
+        <i onclick="closeLtr()" id="closeLtrBtn" class="fas fa-times"></i>
+        <div class="subscribe-wrapper">
+          <h4>BLI MEDLEM</h4>
+          <input type="email" name="email" class="subscribe-input" placeholder="Din e-post">
+          <div class="submit-btn">SEND</div>
+        </div>
+      </div> 
+</div>
+<button onclick="openLtr()" id="openLtrBtn"><i class="fas fa-arrow-left"></i></button>
+
+
+
+<div id="copyright">
+    <a>&#169 Copyright BRAND NAME 2019-2021</a>
+    <a id="copyText2">Om du lurer på noe klikk her</a>
+</div>
+

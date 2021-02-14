@@ -1,0 +1,30 @@
+
+.footer {
+    padding: 50px 0 20px 0;
+    background-color: rgba(0, 0, 128, 0.842);
+    color: #878c94;
+    border-top: 5px solid black;
+    margin-top: 30px;
+    
+}
+.footer .title{text-align: left;color:#fff;font-size:25px;}
+
+.payment{
+    position: absolute;
+    left: 710px;
+    top: 1460px;
+}
+
+
+.copyright{
+    position: absolute;
+    left: 590px;
+    top: 1590px;
+    color: white;
+}
+
+.help-menu{
+    position: absolute;
+    left: 460px;
+    
+}

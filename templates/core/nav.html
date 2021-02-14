@@ -1,0 +1,76 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static '/scss/nav.css' %}" type="text/css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+<script rel="stylesheet" src="{% static '/js/nav.js' %}" type="text/javascript"></script>
+
+<div class="row">
+  <div class="header">
+      <h2>TRYGGT E-HANDEL HOS BRAND NAME</h2>
+  </div>
+</div>
+
+
+<div class="toggle-btn" id="toggle" onclick="showMenu()">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<div id="sidebar">
+  
+<ul id="menuLinks">
+  <button id="closeMenu" onclick="hideMenu()" style="position: absolute; left: 380px; top: -5px; padding: 4px; z-index: 10;">
+    <i class="fas fa-times"></i>
+  </button>
+  <li><a href="/">Hjemme</a></li>
+  <hr style="border: 1px solid transparent;"> 
+  <li><a href="contact">Kundeservice</a></li>
+  <hr style="border: 1px solid transparent;"> 
+  <li><a href="about">Om Oss</a></li>
+  <hr style="border: 1px solid transparent;"> 
+  <li><a href="blog">Blogg</a></li>
+  <hr style="border: 1px solid transparent;"> 
+  <li><a href="/">Logg Inn</a></li>
+  <hr style="border: 1px solid transparent;"> 
+</ul>
+</div>
+
+
+
+
+<div id="search">
+
+<i id="searchIcon" onclick="showSearch()" class="fa fa-search" aria-hidden="true"></i>
+
+<button id="close" onclick="closeSearch()">
+  <img src="{% static '/images/close.png' %}">
+ </button>
+
+ <form id="searchForm" role="search" action="" method="get">
+
+  <input
+    type="text"
+    placeholder="Søk i butikken"
+    name=""
+    value=""
+    
+    
+  />
+  <input id="btn" type="submit" value="Søk" />
+</form>
+</div>
+
+
+  <i id="cartIcon" class="far fa-shopping-cart" style="float: right;"></i>
+  <hr id="navBottom" style="position: relative; top: -8px; border: 1px solid lightgrey;">
+
+
+
+
+
+
+
+

@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Alata', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1930px) {
+  #navBottom {
+    display: block;
+  }
+  #closeMenu {
+    display: none;
+  }
+  body {
+    background: white;
+  }
+  hr {
+    display: none;
+  }
+  .row {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    position: relative;
+    background-color: #1cb4cc;
+    margin-top: 10px;
+    -webkit-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+  }
+  .row:hover {
+    background-color: rgba(5, 5, 172, 0.781);
+    cursor: pointer;
+    -webkit-transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease;
+  }
+  .row h2 {
+    color: white;
+    font-size: 26px;
+    position: relative;
+    left: 726px;
+    margin-top: 7px;
+    margin: 0;
+    text-align: center;
+    -webkit-transition: transform .5s ease;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+    text-shadow: 0px 1px black;
+  }
+  .row:hover h2 {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  #menuLinks {
+    position: relative;
+    left: 140px;
+    padding-top: 15px;
+  }
+  #menuLinks li {
+    display: inline-block;
+    list-style: none;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+  }
+  #menuLinks li:hover {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  #menuLinks a {
+    color: black;
+    font-size: 16px;
+    margin-left: 40px;
+  }
+  #menuLinks a:hover {
+    color: white;
+    background: #1cb4cc;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+  }
+  #search button {
+    position: relative;
+    left: 943px;
+    top: -325px;
+    height: 30px;
+    width: 30px;
+    background-color: #1cb4cc;
+    outline: none;
+    border: 3px solid navy;
+  }
+  #search button img {
+    position: relative;
+    top: -3.5px;
+    left: 0.4px;
+  }
+  #search button:hover {
+    opacity: 0.5;
+  }
+  #search input[type=text] {
+    width: 1630px;
+    border: 2px solid #1cb4cc;
+  }
+  #search i {
+    font-size: 40px;
+    float: right;
+    position: relative;
+    right: 630px;
+    top: -48px;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+  }
+  #search i:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    border-bottom: 1px solid lightgrey;
+  }
+  #search form {
+    padding-left: 70px;
+    position: absolute;
+    top: -448px;
+    font-size: 25px;
+    z-index: 4;
+  }
+  #search form #btn {
+    background: #1cb4cc;
+    color: white;
+    padding: 3px;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+  }
+  #search form #btn:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+#cartIcon {
+  font-size: 35px;
+  position: absolute;
+  right: 360px;
+  top: 53px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  margin: auto;
+}
+
+#cartIcon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border-bottom: 1px solid lightgrey;
+}
+
+.toggle-btn {
+  display: none;
+  position: absolute;
+  top: 27.5px;
+  left: 320px;
+}
+
+.toggle-btn span {
+  display: none;
+  width: 45px;
+  height: 4px;
+  background: #000;
+  display: block;
+  margin-top: 4px;
+}
+
+@media only screen and (max-width: 1320px) {
+  #closeMenu {
+    display: none;
+  }
+  #cartIcon {
+    font-size: 31px;
+    top: 50px;
+    left: 1020px;
+  }
+  .row h2 {
+    font-size: 17px;
+    left: 510px;
+  }
+  #menuLinks {
+    top: 5px;
+    left: 120px;
+  }
+  #menuLinks a {
+    font-size: 12px;
+  }
+  #search button {
+    left: 622px;
+  }
+  #search i {
+    font-size: 31px;
+    left: -440px;
+    top: -35px;
+  }
+  #search input[type=text] {
+    width: 1150px;
+    border: 2px solid #1cb4cc;
+  }
+  #search form {
+    left: -40px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #search button {
+    top: -500px;
+    left: 1057px;
+  }
+  #search #btn {
+    padding: 1px;
+  }
+  #search i {
+    position: absolute;
+    top: 25px;
+    left: 250px;
+  }
+  #search form {
+    font-size: 25px;
+    top: -2005px;
+    left: -51px;
+  }
+  #search form #btn {
+    padding: 0;
+    font-size: 25px;
+  }
+  #search input[type=text] {
+    width: 280px;
+  }
+  #cartIcon {
+    top: 27px;
+    left: 305px;
+    z-index: 0;
+  }
+  hr {
+    display: block;
+    width: 500px;
+  }
+  #sidebar {
+    background: white;
+    position: absolute;
+    left: -2000px;
+    height: 100%;
+    width: 500px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    z-index: 5;
+  }
+  #sidebar ul li {
+    display: inline-block;
+    width: 270px;
+  }
+  #sidebar ul a {
+    border-bottom: 1px solid black;
+    font-size: 19px;
+    color: black;
+    position: relative;
+    left: 50px;
+    display: inline-block;
+    width: 270px;
+  }
+  #sidebar ul a:hover {
+    border: 2px solid navy;
+  }
+  #sidebar #closeMenu {
+    display: block;
+    background: #1cb4cc;
+    outline: none;
+    border: 3px solid navy;
+  }
+  #sidebar #closeMenu i {
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+  }
+  .row {
+    margin-top: 0;
+    padding-bottom: 5px;
+  }
+  .row h2 {
+    font-size: 15px;
+    left: 70px;
+  }
+  .toggle-btn {
+    display: block;
+    position: absolute;
+    left: 20px;
+  }
+  .toggle-btn span :nth-child(1) {
+    display: block;
+    position: absolute;
+  }
+  .toggle-btn span :nth-child(3) {
+    display: block;
+    position: absolute;
+  }
+  .toggle-btn span :nth-child(2) {
+    display: block;
+    position: absolute;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,52 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static '/scss/base.css' %}" type="text/css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+{% block cover %}
+ <img id="coverImg" src="{% static '/images/ocean-cover.jpg' %}">
+{% endblock %}
+
+{% block products %}
+<h1 style="font-size: 46px; text-align: center; margin: 70px;">HVA LETER DU ETTER</h1>
+<section id="lookingForSection" style="text-align: center;"> 
+   <style>
+        #categoryImg{
+         transition: transform .5s;
+         cursor: pointer;
+      }
+      #categoryImg:hover{
+         transform: scale(1.1);
+         filter: brightness(80%); 
+      }
+
+   </style>
+ <img id="categoryImg" src="{% static '/images/xbox-cover.png' %}" style="padding-bottom: 50px;">
+ <img id="categoryImg" src="{% static '/images/xbox-cover.png' %}" style="padding-bottom: 50px;">
+ <img id="categoryImg" src="{% static '/images/xbox-cover.png' %}" style="padding-bottom: 50px;">
+ <img id="categoryImg" src="{% static '/images/xbox-cover.png' %}" style="padding-bottom: 50px;">
+</section>
+<section>
+   <h1 style="font-size: 46px; text-align: center; margin: 70px;">POPULARE PRODUKTER</h1>
+
+</section>
+<section style="position: relative; left: 100px;">
+{% for product in product %}
+ 
+<div class="col-3" style="width: 50%;">
+   <img src="{{ product.image.url }}" class="img-fluid">
+   <div class="product-title" style="font-size: 30px; text-align: center; padding-bottom: 5px;">
+      {{ product }}
+    </div>
+   <div class="price" style="color: navy; border: 1px solid black; width: 16%; font-size: 20px;">
+      ${{ product.price }}
+    </div>
+    <button id="adToCartBtn" style="position: relative; left: 335px; top: -30px; padding: 5px; background: chocolate; color: white;">HANDLEKURV</button>
+ </div>
+ 
+{% endfor %}
+</section>
+
+{% endblock %}
