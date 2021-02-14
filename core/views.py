@@ -4,9 +4,6 @@ from django.http import HttpResponse
 from .models import Product
 
 def home(request):
-    context = {
-        'product': Product.objects.all()
-    }
     return render(request, 'core/home.html', context)
 
 
